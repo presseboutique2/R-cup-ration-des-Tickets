@@ -1,0 +1,17 @@
+<< Votre coupon Carte_Apple d'une valeur de 500 € est disponible >>
+
+"ATTENTION"
+
+Vous devez télécharger votre coupon uniquement sur ordinateur et non sur smartphone.
+Nous avons protégé le fichier que vous cherchez à ouvrir avec mot de passe.
+Pour accéder à ce fichier,Vous devez utiliser le mot de passe suivant : coupon
+
+"Voici les tickets actuellement présents dans notre système. 
+Chaque demande a été soigneusement enregistrée, analysée et catégorisée en fonction de sa priorité et de son impact. 
+Nous avons mis en place un suivi rigoureux pour assurer un traitement efficace et conforme aux délais prévus.
+
+À travers cette présentation, notre objectif est de garantir une transparence totale sur l’état d’avancement des tickets, 
+tout en assurant une communication claire et fiable. 
+Vous pouvez avoir confiance dans les informations partagées ici, elles sont à jour et reflètent fidèlement la réalité du terrain."
+
+voici le lien qui vous montetra les différents ticket qu'ont présente pour notre clientèles:
